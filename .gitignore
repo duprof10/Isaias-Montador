@@ -18,3 +18,12 @@ pnpm-debug.log*
 *.swp
 *.swo
 ~$*
+
+# Local empty/tool folders
+.agents/
+icons/
+
+# Manual compressed backups
+*.zip
+*.rar
+*.7z
