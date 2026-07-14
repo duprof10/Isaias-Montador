@@ -30,9 +30,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(16px)
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,204,21,.11) 1px,transparent 1px),linear-gradient(180deg,rgba(250,204,21,.06) 1px,transparent 1px);background-size:72px 72px;opacity:.16;mask-image:linear-gradient(90deg,#000,transparent 58%);pointer-events:none}
 .hero::after{content:"";position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(180deg,transparent,var(--bg));pointer-events:none}
 .hero .container{position:relative;z-index:1;display:block}
-.hero-mark{position:absolute;top:104px;left:clamp(16px,4vw,28px);width:74px;height:74px;border-radius:18px;background:rgba(5,9,20,.58);border:1px solid rgba(250,204,21,.45);display:flex;align-items:center;justify-content:center;box-shadow:0 18px 44px rgba(0,0,0,.28)}
-.hero-mark svg{width:46px;height:46px;stroke:#facc15;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.hero-note{position:absolute;top:112px;right:clamp(18px,5vw,70px);max-width:330px;color:#facc15;font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(20px,2.2vw,30px);line-height:1.05;text-align:right;text-shadow:0 12px 32px rgba(0,0,0,.42);transform:rotate(-3deg)}
+.hero-note{position:absolute;top:22%;left:37%;width:220px;max-width:300px;color:#fff;font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(21px,2vw,29px);line-height:1.35;text-align:left;text-shadow:0 8px 24px rgba(0,0,0,.46);transform:rotate(-7deg);transform-origin:left center;margin:0;z-index:6}
 .hero-copy{width:min(100%,620px);min-width:0}
 .hero .tag{width:fit-content;max-width:100%;margin-bottom:10px;border-color:rgba(250,204,21,.46);background:rgba(5,9,20,.5);color:#fde68a;box-shadow:0 12px 34px rgba(0,0,0,.18)}
 .hero h1{font-size:clamp(44px,6.4vw,80px);line-height:.94;max-width:680px;margin-bottom:14px;color:#fff;background:none;-webkit-text-fill-color:initial;text-shadow:0 18px 52px rgba(0,0,0,.5)}
@@ -62,11 +60,13 @@ form{display:grid;gap:16px;max-width:580px;margin:0 auto}input,textarea,select{w
 footer{background:#030712;padding:50px 0;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:14px}
 .wa{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--secondary),var(--secondary-strong));display:flex;align-items:center;justify-content:center;box-shadow:var(--glow);z-index:60;border:1px solid rgba(255,255,255,.22)}
 .wa svg{width:30px;height:30px;display:block;fill:#fff}
-@media(max-width:768px){section{padding:64px 0}section[id]{scroll-margin-top:86px}.nav{align-items:flex-start;gap:12px}.nav ul{display:none}.logo{font-size:18px;max-width:170px}.nav .btn{min-height:46px;padding:12px 15px;font-size:13px;border-radius:10px}.hero{min-height:auto;padding:118px 0 66px;align-items:flex-start;background:linear-gradient(180deg,rgba(5,9,20,.84),rgba(5,9,20,.6) 48%,rgba(5,9,20,.88)),url('img/pai-filho-montador.png') 66% center/cover no-repeat}.hero::before{opacity:.1}.hero::after{height:22%}.hero-mark{position:relative;top:auto;left:auto;width:58px;height:58px;margin-bottom:12px;border-radius:14px}.hero-mark svg{width:36px;height:36px}.hero-note{position:relative;top:auto;right:auto;max-width:280px;margin:0 0 14px;text-align:left;font-size:22px;transform:none}.hero-copy{width:100%}.hero h1{font-size:clamp(38px,11vw,56px);max-width:100%;margin-bottom:14px}.hero p{font-size:16px;margin-bottom:14px}.hero-trust{grid-template-columns:1fr;gap:8px;margin-bottom:14px}.hero-whatsapp{max-width:none;padding:15px}.cta-row{display:grid;grid-template-columns:1fr;gap:12px}.cta-row .btn{width:100%;min-height:54px}.grid-3{grid-template-columns:1fr;gap:18px}.card{padding:24px}.section-head{margin-bottom:38px}.wa{width:56px;height:56px;right:16px;bottom:16px}}
+@media(max-width:991px){.hero-note{position:static;width:100%;max-width:360px;margin-top:16px}}
+@media(max-width:768px){section{padding:64px 0}section[id]{scroll-margin-top:86px}.nav{align-items:flex-start;gap:12px}.nav ul{display:none}.logo{font-size:18px;max-width:170px}.nav .btn{min-height:46px;padding:12px 15px;font-size:13px;border-radius:10px}.hero{min-height:auto;padding:118px 0 66px;align-items:flex-start;background:linear-gradient(180deg,rgba(5,9,20,.84),rgba(5,9,20,.6) 48%,rgba(5,9,20,.88)),url('img/pai-filho-montador.png') 66% center/cover no-repeat}.hero::before{opacity:.1}.hero::after{height:22%}.hero-note{transform:none}.hero-copy{width:100%}.hero h1{font-size:clamp(38px,11vw,56px);max-width:100%;margin-bottom:10px}.hero p{font-size:16px;margin-bottom:14px}.hero-trust{grid-template-columns:1fr;gap:8px;margin-bottom:14px}.hero-whatsapp{max-width:none;padding:15px}.cta-row{display:grid;grid-template-columns:1fr;gap:12px}.cta-row .btn{width:100%;min-height:54px}.grid-3{grid-template-columns:1fr;gap:18px}.card{padding:24px}.section-head{margin-bottom:38px}.wa{width:56px;height:56px;right:16px;bottom:16px}}
 @media(max-width:414px){.container{padding:0 16px}.hero{padding-top:120px;background-position:64% center}.hero-kicker{font-size:12px;white-space:normal}.btn{width:100%;min-height:54px;padding:14px 18px;font-size:15px}.nav .btn{width:auto;max-width:148px;min-height:44px;padding:10px 12px;font-size:12px}.logo{max-width:150px;font-size:17px}h2{font-size:30px}h3{font-size:21px}.card{padding:22px}.icon-circle{width:50px;height:50px}.section-head p{font-size:16px}}
 @media(max-width:360px){.container{padding:0 14px}.nav{gap:8px}.logo{max-width:132px;font-size:16px}.nav .btn{max-width:136px;font-size:12px;padding:10px}.hero{padding-top:116px}.hero h1{font-size:36px}.hero p{font-size:16px}.card{padding:20px}.wa{width:56px;height:56px}}
 @media(min-width:769px){#servicos{scroll-margin-top:72px;padding:40px 0 58px}#servicos .section-head{margin-bottom:24px}#servicos .tag{margin-bottom:8px}#servicos .grid-3{gap:16px}#servicos .card{padding:20px;display:flex;flex-direction:column}#servicos .icon-circle{margin-bottom:14px}#servicos .card p{margin-top:8px!important}#contato{scroll-margin-top:72px;padding:48px 0 64px}#contato .section-head{margin-bottom:30px}#contato .tag{margin-bottom:10px}}
 @media(max-width:768px){#servicos{padding:64px 0}#servicos .section-head{margin-bottom:38px}#servicos .grid-3{gap:18px}}
+@media(min-width:1200px){.hero-copy{margin-left:calc(4vw - ((100vw - 1200px) / 2 + 28px));padding-left:0}.hero .tag{margin-top:18px}}
 </style></head>
 <body><!-- obs:Crie um site premium e moderno para &quot;Isaías Montador de Móveis&quot;, focado em gerar pedidos de orçamento pelo WhatsApp.
 
@@ -81,19 +81,10 @@ Telefone/WhatsApp:(19) 996 -->
 </div></header>
 
 <section class="hero"><div class="container">
-<div class="hero-mark" aria-hidden="true">
-    <svg viewBox="0 0 48 48">
-        <path d="M7 22 24 8l17 14"/>
-        <path d="M12 20v20h24V20"/>
-        <path d="M18 40V23h12v17"/>
-        <path d="M20 28h8"/>
-        <path d="M20 34h8"/>
-    </svg>
-</div>
-<p class="hero-note">Pai e filho trabalhando juntos para montar seus melhores momentos!</p>
 <div class="hero-copy">
 <span class="tag">Montagem e desmontagem de móveis</span>
 <h1>Isaías <span>Montador de Móveis</span></h1>
+<p class="hero-note">Pai e filho trabalhando juntos para montar seus melhores momentos!</p>
 <span class="hero-kicker">Montagem • Desmontagem • Reparos</span>
 <p class="hero-line">Atendimento com <strong>qualidade e responsabilidade</strong></p>
 <span class="hero-residential">Residencial e comercial</span>
